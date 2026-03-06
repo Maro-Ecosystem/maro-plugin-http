@@ -1,7 +1,7 @@
 {
   "name": "maro-plugin-http",
   "version": "1.0.0",
-  "main": "./dist/lib/index.js",
+  "main": "./dist/src/lib/index.js",
   "type": "commonjs",
   "scripts": {
     "build": "tsc --project ./tsconfig.json",
