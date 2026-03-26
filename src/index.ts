@@ -1,4 +1,4 @@
-import { Config, ConfigRegistry, PluginExport } from "@maro/maro";
+import { Config, ConfigRegistry, PathRegistry, PluginExport } from "@maro/maro";
 
 import { GenerateSwagger } from "./actions/generate_swagger";
 import { PostmanCommand } from "./commands/postman";
@@ -8,10 +8,8 @@ import { HttpConfig } from "./lib/config";
 const Plugin: PluginExport = {
   name: "maro-plugin-http",
   onLoad() {
-    ConfigRegistry.register(
-      new HttpConfig()
-    );
-
+    PathRegistry.register("http", "Repository containing HTTP collection files")
+    ConfigRegistry.register(new HttpConfig());
     if (Config.getView().get("http.generate_swagger")) new GenerateSwagger().register();
   },
   commands: [
