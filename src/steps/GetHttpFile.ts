@@ -1,4 +1,4 @@
-import { AppRepo, Dir, ExecutionContext, getPath, ValidateConfig, WorkflowStep } from "@maro/maro";
+import { AppRepo, ExecutionContext, getPath, ValidateConfig, WorkflowStep } from "@maro/maro";
 
 import { HttpFile } from "../lib/http_file";
 

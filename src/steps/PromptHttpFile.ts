@@ -1,4 +1,4 @@
-import { Config, Dir, ExecutionContext, getPath, ValidateConfig, WorkflowStep } from "@maro/maro";
+import { ExecutionContext, getPath, ValidateConfig, WorkflowStep } from "@maro/maro";
 
 import { HttpFile } from "../lib/http_file";
 
